@@ -30,7 +30,7 @@ Default CoolDown Is **24 Hours(1 Day)**
             .setAuthor(`${user.user.username} Daily Reward`, user.user.displayAvatarURL({ dynamic: true }))
             .setTimestamp()
             .setColor('RANDOM')
-            .setDescription(`You Claimed **${amount.toLocaleString()}$** As Daily Reward!`)
+            .setDescription(`You Claimed **${amount.toLocaleString()}$** As Daily Reward!\n\nCome back again tomorrow to claim the next reward!`)
             message.channel.send(embed)
             db.add(`money_${user.id}`, amount) // Add Amount To User's Wallet
             db.set(`dailytime_${user.id}`, Date.now()) // Set Time When Command Was Used

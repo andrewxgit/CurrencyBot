@@ -3,8 +3,9 @@ const db = require('quick.db')
 
 module.exports = {
     name: "balance",
-    aliases: ["bal", "wallet"]
-    description: 'Check your Current Balance' , // Optional
+    aliases: ["bal", "wallet"],
+    description: 'Check your Current Balance' ,
+    category: "💰 currency"
 
     run: async(client, message, args) => {
 

@@ -31,9 +31,7 @@ Default CoolDown Is **1 Month (30 Days)**
             .setAuthor(`${user.user.username} Monthly Reward`, user.user.displayAvatarURL({ dynamic: true }))
             .setTimestamp()
             .setColor('RANDOM')
-            .setDescription(`
-<@${user.id}> Claimed **$${amount.toLocaleString()}$** As Monthly Reward!
-            `)
+            .setDescription(`<@${user.id}> Claimed **$${amount.toLocaleString()}$** As Monthly Reward!\n\nCome back tomorrow to claim the next reward!`)
             message.channel.send(embed)
             db.add(`money_${user.id}`, amount) // Add Amount To User's Wallet
             db.set(`monthlytime_${user.id}`, Date.now()) // Set Time When Command Was Used

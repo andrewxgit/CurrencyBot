@@ -6,6 +6,7 @@ module.exports = {
     name: 'rob', // You Can Keep Any Name
     aliases: ['steal'],
     description: 'Rob someone for cash', // Optional
+    category: '💰 currency'
 
     run: async(message, args, client) => {
 

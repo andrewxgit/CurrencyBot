@@ -5,7 +5,6 @@ const db = require('quick.db')
 
 client.queue = new Discord.Collection()  
 
-const { token } = require('./config.json')
 const welcome = require('./commands/Main-Commands/Mod/welcome');
 const loadCommands = require('./commands/load-commands');
 const suggest = require('./commands/Main-Commands/Fun/suggest');
